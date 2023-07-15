@@ -1,0 +1,56 @@
+.movie-wrapper {
+  position: relative;
+  font-size: 15px;
+  img {
+    width: 225px;
+    object-fit: cover;
+  }
+  .movie-name {
+    -webkit-transition: top ease 1s;
+    -moz-transition: top ease 1s;
+    -ms-transition: top ease 1s;
+    -o-transition: top ease 1s;
+    transition: top ease 1s;
+    position: absolute;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    top: 280px;
+    left: 0;
+    bottom: 3px;
+    width: 215px;
+    background-color: #000000a6;
+    .movie-description {
+      p {
+        -webkit-transition: max-height 0.5s;
+        -moz-transition: max-height 0.5s;
+        -ms-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+        max-height: 0;
+        position: absolute;
+        overflow: clip;
+      }
+      position: absolute;
+      padding-top: 15px;
+      width: 90%;
+    }
+  }
+}
+
+.movie-wrapper:hover {
+  .movie-name {
+    top: 0;
+    .movie-description {
+      p {
+        -webkit-transition: max-height 1.5s;
+        -moz-transition: max-height 1.5s;
+        -ms-transition: max-height 1.5s;
+        -o-transition: max-height 1.5s;
+        transition: max-height 1.5s;
+        max-height: 200px;
+      }
+    }
+  }
+}

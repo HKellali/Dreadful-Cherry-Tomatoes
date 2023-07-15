@@ -1,2 +1,4 @@
-# Dreadful-Cherry-Tomatoes
-A React app that shows information about movies.
+# Dreadful Cherry Tomatoes
+
+Dreadful Cherry Tomatoes is a new platform to find movies. The main objective is to
+help users find information about their favorite movies.

@@ -1,0 +1,29 @@
+.pagination {
+  padding: 10px;
+  padding-top: 100px;
+  display: flex;
+  button {
+    margin: 0 5px;
+    padding: 10px 14px;
+    border-radius: 50px;
+    background-color: rgb(50.2, 12.5, 11.8);
+    color: white;
+    border-style: none;
+    img {
+      width: 50%;
+    }
+  }
+
+  .next,
+  .previous {
+    background-color: transparent;
+    padding: 0;
+  }
+  .disabled {
+    color: black;
+    filter: contrast(0%);
+  }
+  .active {
+    background-color: rgb(76.9, 14.5, 12.9);
+  }
+}
