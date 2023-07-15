@@ -39,8 +39,8 @@ export default function Movies(props: { searchInput?: string }) {
   }, [props.searchInput, loading]);
 
   useEffect(() => {
-    const startOffset = (activePage - 2) * moviesPerPage + moviesPerPage;
-    const endOffset = (activePage - 1) * moviesPerPage + moviesPerPage;
+    const startOffset = (activePage - 1) * moviesPerPage;
+    const endOffset = startOffset + moviesPerPage;
     setCurrentmovies(movies.slice(startOffset, endOffset));
     setPageCount(Math.ceil(movies.length / moviesPerPage));
   }, [activePage, movies]);
