@@ -3,17 +3,31 @@ import nextButton from "../../resources/dreadful cherry tomatoes/icon/right-chev
 
 import styles from "./Pagination.module.scss";
 
+/* I could have imported this from a different file but decided to leave 
+it here in order to not change the project structure too much  and avoid 
+adding a utilities folder */
+function generateArray(start: number, stop: number, step: number) {
+  const array = Array.from(
+    { length: (stop - start) / step + 1 },
+    (_, i) => start + i * step
+  );
+
+  return array;
+}
+
+interface PaginationProps {
+  pageCount: number;
+  activePage: number;
+  setActivePage: React.Dispatch<React.SetStateAction<number>>;
+}
+
 const Pagination = ({
   pageCount,
   activePage,
   setActivePage,
-}: {
-  pageCount: number;
-  activePage: number;
-  setActivePage;
-}) => {
-  /*const pages = Array.from(1, pageCount, 1);*/
-  const pages = [...Array(pageCount).keys()].map((page) => ++page);
+}: PaginationProps) => {
+  const pages = generateArray(1, pageCount, 1);
+
   const previousClickable = activePage > 1;
   const nextClickable = activePage < pageCount;
 

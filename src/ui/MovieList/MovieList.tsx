@@ -2,7 +2,11 @@ import MovieCard, { Movie } from "../../components/MovieCard/MovieCard";
 
 import styles from "./MovieList.module.scss";
 
-const MovieList = ({ currentmovies }: { currentmovies: Movie[] }) => {
+interface MovieListProps {
+  currentmovies: Movie[];
+}
+
+const MovieList = ({ currentmovies }: MovieListProps) => {
   return (
     <div className={styles.list}>
       <div className={styles.wrapper}>

@@ -13,11 +13,11 @@ export type Movie = {
   releaseYear: number;
 };
 
-interface Props {
+interface MovieCardProps {
   movie: Movie;
 }
 
-const movieCard = ({ movie }: Props) => {
+const movieCard = ({ movie }: MovieCardProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.image}>
