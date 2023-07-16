@@ -8,14 +8,22 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.up}>
-        <img className={styles.logo} src={logo} alt="" />
+        <img
+          className={styles.logo}
+          src={logo}
+          alt="Dreadful Cherry Tomatoes logo"
+        />
       </div>
       <div className={styles.middle}>
         <div className={styles.left}>
-          <img className={styles.appStore} src={appStore} alt="" />
+          <img className={styles.appStore} src={appStore} alt="appStore logo" />
         </div>
         <div className={styles.right}>
-          <img className={styles.googlePlay} src={googlePlay} alt="" />
+          <img
+            className={styles.googlePlay}
+            src={googlePlay}
+            alt="googlePlay logo"
+          />
         </div>
       </div>
       <div className={styles.down}>

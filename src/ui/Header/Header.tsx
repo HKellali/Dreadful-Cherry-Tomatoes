@@ -3,9 +3,9 @@ import search from "../../resources/dreadful cherry tomatoes/icon/search@2x.png"
 
 import styles from "./Header.module.scss";
 
-export function Header(props: { setSearchInput?: any }) {
+export function Header({ setSearchInput }: { setSearchInput?: any }) {
   function handleChange(event) {
-    props.setSearchInput(event.target.value);
+    setSearchInput(event.target.value);
   }
 
   return (
@@ -19,7 +19,7 @@ export function Header(props: { setSearchInput?: any }) {
       </div>
       <div className={styles.down}>
         <i>
-          <img src={search} alt="" />
+          <img src={search} alt="search bar magnifying glass" />
         </i>
         <input type="text" onChange={handleChange} />
       </div>

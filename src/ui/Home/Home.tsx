@@ -1,11 +1,11 @@
-import GetMovies from "../GetMovies/GetMovies";
+import Movies from "../Movies/Movies";
 
 import styles from "./Home.module.css";
 
-export function Home(props: { searchInput?: string }) {
+export function Home({ searchInput }: { searchInput?: string }) {
   return (
     <div className={styles.home}>
-      <GetMovies searchInput={props.searchInput} />
+      <Movies searchInput={searchInput} />
     </div>
   );
 }

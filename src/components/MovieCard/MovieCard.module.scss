@@ -1,11 +1,15 @@
-.movie-wrapper {
+.wrapper {
   position: relative;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   img {
     width: 225px;
     object-fit: cover;
   }
-  .movie-name {
+  .name {
     -webkit-transition: top ease 1s;
     -moz-transition: top ease 1s;
     -ms-transition: top ease 1s;
@@ -16,11 +20,10 @@
     padding-left: 10px;
     padding-top: 10px;
     top: 280px;
-    left: 0;
     bottom: 3px;
     width: 215px;
     background-color: #000000a6;
-    .movie-description {
+    .description {
       p {
         -webkit-transition: max-height 0.5s;
         -moz-transition: max-height 0.5s;
@@ -37,10 +40,10 @@
   }
 }
 
-.movie-wrapper:hover {
-  .movie-name {
+.wrapper:hover {
+  .name {
     top: 0;
-    .movie-description {
+    .description {
       p {
         -webkit-transition: max-height 1.5s;
         -moz-transition: max-height 1.5s;

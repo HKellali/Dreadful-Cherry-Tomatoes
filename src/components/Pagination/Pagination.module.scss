@@ -1,8 +1,8 @@
 .pagination {
-  padding: 10px;
-  padding-top: 100px;
+  padding-bottom: 50px;
   display: flex;
   button {
+    cursor: pointer;
     margin: 0 5px;
     padding: 10px 14px;
     border-radius: 50px;
@@ -25,5 +25,10 @@
   }
   .active {
     background-color: rgb(76.9, 14.5, 12.9);
+  }
+
+  .active,
+  .disabled {
+    cursor: not-allowed;
   }
 }

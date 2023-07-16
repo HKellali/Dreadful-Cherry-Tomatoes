@@ -1,6 +1,6 @@
-import "./MovieCard.scss";
+import styles from "./MovieCard.module.scss";
 
-export type movieData = {
+export type Movie = {
   title: string;
   description: string;
   images: {
@@ -14,19 +14,22 @@ export type movieData = {
 };
 
 interface Props {
-  movie: movieData;
+  movie: Movie;
 }
 
-const movieCard = (props: Props) => {
+const movieCard = ({ movie }: Props) => {
   return (
-    <div className="movie-wrapper">
-      <div className="movie-image">
-        <img src={props.movie.images.posterArt.url} alt="" />
+    <div className={styles.wrapper}>
+      <div className={styles.image}>
+        <img
+          src={movie.images.posterArt.url}
+          alt={movie.title + "movie poster"}
+        />
       </div>
-      <div className="movie-name">
-        {props.movie.title}
-        <div className="movie-description">
-          <p>{props.movie.description}</p>
+      <div className={styles.name}>
+        {movie.title}
+        <div className={styles.description}>
+          <p>{movie.description}</p>
         </div>
       </div>
     </div>

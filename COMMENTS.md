@@ -8,6 +8,8 @@
 
 - I tried to get the ratio of the images by calculating the ratio in the example image.
 
+- I decided to not care too much about responsive design as it was not required and I didn't want to waste too much time, but it is easily doable in case it's needed.
+
 - I moved the resources folder in the src folder because I couldn't import it otherwise.
 
 - I made some changes to the index.tsx page in order to use React 18 (instead of 17).
