@@ -4,16 +4,16 @@
     padding: 0px;
     text-align: left;
     .label {
-      padding: 10px 20px;
+      padding: 10px 15px;
     }
     .content {
       .grid {
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(225px, max-content));
-        justify-content: center;
-        grid-gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        max-width: 1385px;
+        grid-gap: 0.5rem;
         width: 100%;
-        box-sizing: border-box;
         padding-bottom: 50px;
       }
     }
